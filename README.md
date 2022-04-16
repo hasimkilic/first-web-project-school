@@ -1,2 +1,2 @@
 # hasimkilic.github.io
-Okul ders proje
+Bu repoda Web Tasarımı ve Programlama dersinde yaptığımız örnekleri tutacağım.
