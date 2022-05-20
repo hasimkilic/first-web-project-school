@@ -1,0 +1,477 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+select,
+textarea,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+:root {
+    --red: #e63946ff;
+    --lightWhite: #f1faeeff;
+    --turquise: #a8dadcff;
+    --regularBlue: #457b9dff;
+    --darkBlue: #1d3557ff;
+    --grey: #E6E6E6;
+    --textColor: #001219;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--lightWhite);
+    color: var(--textColor);
+}
+
+.container {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    margin: 0 0.7rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: 1px solid var(--darkBlue);
+    border-radius: 5px;
+    background-color: var(--darkBlue);
+    color: var(--grey);
+    transform: all 0.4s ease-in;
+}
+
+.nav-link:hover {
+    background-color: var(--lightWhite);
+    opacity: 1;
+    transition: 0.4s all ease-in;
+    color: var(--textColor);
+}
+
+.content {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.paragraph {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+}
+
+.svg-photo {
+    padding: 0 10px;
+}
+
+#sapka {
+    animation: sapka-animasyonu 2s 0.4s ease-in infinite;
+}
+
+#parca1,
+#parca3,
+#parca5 {
+    animation: parca-animasyonu 2s 0.2s ease-in infinite;
+}
+
+@keyframes sapka-animasyonu {
+    0% {
+        transform: translateY(0.3rem);
+    }
+    20% {
+        transform: translateY(0.7rem);
+    }
+    50% {
+        transform: translateY(0.9rem);
+    }
+    70% {
+        transform: translateY(0.8rem);
+    }
+    100% {
+        transform: translateY(0.3rem);
+    }
+}
+
+@keyframes parca-animasyonu {
+    0% {
+        transform: translateY(-0.3rem);
+    }
+    20% {
+        transform: translateY(-0.7rem);
+    }
+    50% {
+        transform: translateY(-0.9rem);
+    }
+    70% {
+        transform: translateY(-1.10rem);
+    }
+    100% {
+        transform: translateY(-0.3rem);
+    }
+}
+
+
+/*Matematik*/
+
+.contentmaths {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    overflow: hidden;
+    color: var(--textColor);
+}
+
+.contentTitle {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.baslik {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0.3rem 0;
+    opacity: 0.8;
+}
+
+.svg-photo1 {
+    width: 80%;
+    height: 50%;
+    margin-bottom: 2rem;
+}
+
+.svg-photo1 img {
+    height: 50%;
+    width: 100%;
+}
+
+.img img {
+    height: 317px;
+    z-index: 99;
+}
+
+
+/* .img img:hover {
+    transform: scale(1.07);
+    transition: transform 1s 50ms ease-in-out;
+} */
+
+.contentText {
+    margin-top: 1.5rem;
+}
+
+.contentParagraph {
+    margin: 0.8rem 0;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
+.units {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.unit1 {
+    margin-top: 1.5rem;
+    padding: 0 4rem;
+}
+
+.unit1 li {
+    color: #f1faeeff;
+    background-color: var(--darkBlue);
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.unit1 li:hover {
+    background-color: var(--lightWhite);
+    opacity: 1;
+    transition: 0.4s all ease-in;
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+}
+
+
+/*Fen Bilimleri*/
+
+#science {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: 25px;
+}
+
+#scienceSelect {
+    height: 100%;
+    width: 80%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scienceContext {
+    height: 75vh;
+    width: 100%;
+}
+
+.image {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.image img:hover {
+    transform: scaleY(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+
+/*Footer*/
+
+.footer {
+    height: 25vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #f1faeeff, #a8dadcff);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--textColor);
+}
+
+.bolumler ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bolumler a {
+    margin: 0 15px;
+    color: var(--textColor);
+}
+
+.bolumler a:hover {
+    color: var(--regularBlue);
+}
+
+#yukari_buton {
+    display: inline-block;
+    background-color: var(--darkBlue);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10000;
+    text-align: center;
+}
+
+#yukari_buton span {
+    font-size: 2em;
+    line-height: 50px;
+    color: var(--lightWhite);
+}
+
+#yukari_buton:hover {
+    cursor: pointer;
+    background-color: var(--lightWhite);
+    color: var(--darkBlue);
+    border: 1px solid var(--darkBlue);
+}
+
+#yukari_buton:hover span {
+    color: var(--darkBlue);
+}
+
+#yukari_buton:active {
+    background-color: var(--turquise);
+}
+
+#yukari_buton.show {
+    opacity: 1;
+    visibility: visible;
+}

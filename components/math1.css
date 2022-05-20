@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a8dadcff;
+    scroll-behavior: smooth;
+    font-size: 1.05rem;
+}
+
+img {
+    border-radius: 4px;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #001219;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.head {
+    background-color: #a8dadcff;
+}
+
+.container .title {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.title {
+    color: #e63946ff;
+    background-color: #a8dadcff;
+    width: 100vw;
+    padding: 5px;
+}
+
+.head h1.title {
+    border-radius: 0px;
+}
+
+h1.title {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 0px;
+}
+
+h2.title {
+    text-align: center;
+}
+
+.content {
+    margin: 1rem;
+    width: 90%;
+}
+
+.paragraph {
+    margin: 1rem 2rem 0 2rem;
+}
+
+.paragraph img {
+    margin: 10px 0;
+}
+
+b {
+    color: #1d3557ff;
+}
+
+.paragraph a {
+    width: 90%;
+    text-decoration: none;
+    color: #1d3557ff;
+    margin-bottom: 5px;
+}
+
+i {
+    color: black;
+    font-weight: bold;
+}
+
+.boyut {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    width: 2rem;
+    height: 2rem;
+    color: #1d3557ff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.not {
+    width: 100%;
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #1d3557ff;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #001219;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a8dadcff;
+    font-weight: 600;
+}
+
+.btn a:hover {
+    background-color: #a8dadcff;
+    transition: all 600ms ease-in-out;
+    transform: scale(1.04);
+    border: 0.5px solid #001219;
+}
+
+#yukari_buton {
+    display: inline-block;
+    background-color: #001219;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100000;
+    text-align: center;
+}
+
+#yukari_buton span {
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#yukari_buton:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+#yukari_buton:hover span {
+    color: #001219;
+}
+
+#yukari_buton:active {
+    background-color: #fff;
+}
+
+#yukari_buton.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* matematik sorular*/
+
+.quiz-header {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    background-color: #001219;
+    color: #fff;
+}

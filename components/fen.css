@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+:root {
+    --greenColor: #80ed99;
+    --fontColor: #001219;
+    --headColor: #d00000;
+    --headColor2: #e63946ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-decoration: none;
+    list-style-type: none;
+    background-color: var(--greenColor);
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    font-size: 1.05rem;
+    color: var(--fontColor);
+}
+
+img {
+    border-radius: 4px;
+    margin: 0.4rem 0;
+    display: block;
+}
+
+.container {
+    height: 100%;
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header {
+    height: 100%;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.title {
+    color: var(--headColor);
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTitle {
+    color: var(--headColor2);
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+}
+
+.subImg {
+    margin: 0 auto;
+}
+
+.paragraph {
+    margin: 0.6rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.descİmgSpn {
+    color: #001219;
+    opacity: 0.8;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    color: #1d3557ff;
+}
+
+.not {
+    width: 100%;
+    background-color: var(--greenColor);
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+table,
+tr,
+td,
+th {
+    border: 1px solid #001219;
+    border-collapse: collapse;
+    color: #001219;
+}
+
+.table {
+    color: #001219;
+    margin-bottom: 1rem;
+    width: 90%;
+    height: 10rem;
+    padding: 1rem;
+    text-align: left;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.ul {
+    width: 95%;
+    margin: 0.7rem auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--fontColor);
+    margin-top: 1rem;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #001219;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--greenColor);
+    font-weight: 600;
+}
+
+.btn a:hover {
+    background-color: var(--greenColor);
+    transition: all 600ms ease-in-out;
+    transform: scale(1.04);
+    border: 0.5px solid #001219;
+}
+
+#yukari_buton {
+    display: inline-block;
+    background-color: #001219;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100000;
+    text-align: center;
+}
+
+#yukari_buton span {
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#yukari_buton:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#yukari_buton:hover span {
+    color: #001219;
+}
+
+#yukari_buton:active {
+    background-color: #fff;
+}
+
+#yukari_buton.show {
+    opacity: 1;
+    visibility: visible;
+}
