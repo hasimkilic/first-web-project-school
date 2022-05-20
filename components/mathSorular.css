@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #a8dadcff;
+    scroll-behavior: smooth;
+    font-size: 1.05rem;
+    color: #001219;
+}
+
+a,
+li {
+    color: inherit;
+}
+
+.container {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #001219;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.header {
+    width: 75%;
+    height: 35%;
+    background-color: #001219;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+#quiz-content {
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+#quiz-sections {
+    margin: 10px 0;
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+#sure {
+    border: 4px solid #001219;
+    padding: 2rem;
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: #001219;
+    border-radius: 2rem;
+    min-width: 20%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 1rem auto;
+}
+
+.button .btn {
+    margin: 0 9.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: #fff;
+    background-color: #001219;
+    border-radius: 20px;
+    cursor: pointer;
+}
