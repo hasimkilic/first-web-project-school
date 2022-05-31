@@ -1,0 +1,11 @@
+{
+    "name": "cls",
+    "version": "1.0.0",
+    "description": "Bu proje 4.sınıf öğrecilerinin yararlanması için yapılmıştır.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Haşim Kılıç",
+    "license": "ISC"
+}
