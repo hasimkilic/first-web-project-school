@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./mathSorular.css">
+    <link rel="stylesheet" href="./math1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Matematik 10 Soru</title>
 </head>
@@ -17,40 +18,297 @@
 <body>
     <div id="container" class="container">
         <h1 class="title">Sorular</h1>
-        <div id="quiz-header" class="header">
-            <h3 id="quiz-head">Soru 1</h3>
-            <!--Bu alt kısma 10 soruyu yaz ilk hariç diğerleri görünmesin ,
-                ileri butonuna basıldığında diğer soruya geri butonuna geçsin ve 10 soruluk test tamamlansın.-->
+        <div id="quizNumber" class="header">
+            <h3>Soru 1</h3>
             <div id="quiz-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, voluptatem!
+                32005 sayının okunuşu aşağıdakilerden hangisidir ?
             </div>
             <div id="quiz-sections">
                 <ul>
                     <a href="#">
-                        <li>A</li>
+                        <li class="cvp"><input type="radio" name="quizNumber1" value="otuzikibin" onclick="control(1,'otuzikibin')"> Otuz iki bin
+                        </li>
                     </a>
                     <a href="#">
-                        <li>b</li>
+                        <li class="cvp"><input type="radio" name="quizNumber1" value="Otuz iki bin beş" onclick="control(1,'Otuz iki bin beş')"> Otuz iki bin beş
+                        </li>
                     </a>
                     <a href="#">
-                        <li>c</li>
+                        <li class="cvp"><input type="radio" name="quizNumber1" value="Üç yüz yirmi beş" onclick="control(1,'Üç yüz yirmi beş')"> Üç yüz yirmi beş
+                        </li>
                     </a>
                     <a href="#">
-                        <li>d</li>
+                        <li class="cvp"><input type="radio" name="quizNumber1" value="Üç bin iki yüz beş" onclick="control(1,'Üç bin iki yüz beş')"> Üç bin iki yüz beş
+                        </li>
                     </a>
                 </ul>
             </div>
         </div>
-        <div id="sure">
-        </div>
-        <div class="button">
-            <div class="btn-style">
-                <button id="btn" class="btn">Geri</button>
-                <button id="btn" class="btn">İleri</button>
+        <div id="quizNumber" class="header">
+            <h3>Soru 2</h3>
+
+            <div id="quiz-content">
+                Okunuşu '' Dört yüz elli altı bin dokuz yüz beş '' olan sayı aşağıdakilerden hangisidir ?
             </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber2" value="456005" onclick="control(2,'456005')"> 456005
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber2" value="456005" onclick="control(2,'459605')"> 456005
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber2" value="456905" onclick="control(2,'456905')"> 456905
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber2" value="456095" onclick="control(2,'456095')"> 456095
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="quizNumber" class="header">
+            <h3>Soru 3</h3>
+            <div id="quiz-content">
+                2A4 5B8 Yandaki sayı altı basamaklı bir sayıdır. Buna göre A ve B basamağının adı nedir ?
+            </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a id="" href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber3" value="Binler - Yüzler basamağı" onclick="control(3,'Binler - Yüzler basamağı')"> Binler - Yüzler basamağı
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber3" value="onbinleronlarbasamagı" onclick="control(3,'onbinleronlarbasamagı')"> On binler-Onlar basamağı
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber3" value="Yüz binler - Yüzler basamağı" onclick="control(3,'Yüz binler - Yüzler basamağı')"> Yüz binler - Yüzler basamağı
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber3" value="Binler - Birler basamağı" onclick="control(3,'Binler - Birler basamağı')"> Binler - Birler basamağı
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="quizNumber" class="header">
+            <h3>Soru 4</h3>
+            <div id="quiz-content">
+                5A 54B yandaki sayı beş basamaklı bir sayıdır. A yerine 4, B yerine de 8 yazılırsa sayının okunuşu nasıl olur ?
+            </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a href="#">
+                        <li class="cvp "><input type="radio" name="quizNumber4" value="Elli dört bin kırk sekiz" onclick="control(4,'Elli dört bin kırk sekiz')"> Elli dört bin kırk sekiz
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber4" value="Elli bin beş yüz kırk sekiz" onclick="control(4,'Elli bin beş yüz kırk sekiz')"> Elli bin beş yüz kırk sekiz
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber4" value="ellidörtbinbeşyüzkırksekiz" onclick="control(4,'ellidörtbinbeşyüzkırksekiz')"> Elli dört bin beş yüz kırk sekiz
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber4" value="Elli bin sekiz" onclick="control(4,'Elli bin sekiz')"> Elli bin sekiz
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="quizNumber" class="header">
+            <h3>Soru 5</h3>
+            <!--Bu alt kısma 10 soruyu yaz ilk hariç diğerleri görünmesin ,
+                ileri butonuna basıldığında diğer soruya geri butonuna geçsin ve 10 soruluk test tamamlansın.-->
+            <div id="quiz-content">
+                428570 sayısında bulunan 2 rakamının basamak değeri kaçtır ?
+            </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber5" value="20" onclick="control(5,'20')"> 20
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber5" value="200" onclick="control(5,'200')"> 200
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber5" value="2000" onclick="control(5,'2000')"> 2000
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber5" value="20000" onclick="control(5,'20000')"> 20000
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="quizNumber" class="header">
+            <h3>Soru 6</h3>
+            <div id="quiz-content">
+                5 - 7 - 8 - 2 - 4 yandaki rakamlarla yazılabilecek en küçük beş basamaklı doğal sayı aşağıdakilerden hangisidir ?
+            </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber6" value="25 478" onclick="control(6,'25 478')"> 25 478
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber6" value="24 578" onclick="control(6,'24 578')"> 24 578
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber6" value="27 485" onclick="control(6,'27 485')"> 27 485
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber6" value="48 752" onclick="control(6,'48 752')"> 48 752
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="quizNumber" class="header">
+            <h3>Soru 7</h3>
+            <div id="quiz-content">
+                3200 + 100 yandaki işlemi zihinden yaparsak sonuç kaçtır ?
+            </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber7" value="3400" onclick="control(7,'3400')"> 3400
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber7" value="3600" onclick="control(7,'3600')"> 3600
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber7" value="3500" onclick="control(7,'3500')"> 3500
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber7" value="3300" onclick="control(7,'3300')"> 3300
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="quizNumber" class="header">
+            <h3>Soru 8</h3>
+            <div id="quiz-content">
+                165 sayfalık çalışma kitabının 44 sayfasını bitiren Anıl' ın yapması gereken tahmini kaç sayfası kalmıştır ?
+            </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber8" value="131" onclick="control(8,'131')"> 131
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber8" value="121" onclick="control(8,'121')"> 121
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber8" value="111" onclick="control(8,'111')"> 111
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber8" value="101" onclick="control(8,'101')"> 101
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="quizNumber" class="header">
+            <h3>Soru 9</h3>
+            <div id="quiz-content">
+                500 TL' nin 2/5'ini harcadım. Geriye kaç TL kalmıştır ?
+            </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber9" value="200" onclick="control(9,'200')"> 200
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber9" value="400" onclick="control(9,'400')"> 400
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber9" value="100" onclick="control(9,'100')"> 100
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber9" value="300" onclick="control(9,'300')"> 300
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="quizNumber" class="header">
+            <h3>Soru 10</h3>
+            <div id="quiz-content">
+                Bir sınıfın 3/4' ü kızdır.Kızların sayısı 30 ise sınıfın tamamı kaç kişidir ?
+            </div>
+            <div id="quiz-sections">
+                <ul>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber10" value="20" onclick="control(10,'20')"> 20
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber10" value="40" onclick="control(10,'40')"> 40
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber10" value="35" onclick="control(10,'35')"> 35
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="cvp"><input type="radio" name="quizNumber10" value="10" onclick="control(10,'10')"> 10
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="time">
+            </div>
+            <div class="table">
+                <div id="point" class="puan">
+                    Puan:
+                </div>
+                <div class="sorular">
+                    <p id="quizNumber1">1</p>
+                    <p id="quizNumber2">2</p>
+                    <p id="quizNumber3">3</p>
+                    <p id="quizNumber4">4</p>
+                    <p id="quizNumber5">5</p>
+                    <p id="quizNumber6">6</p>
+                    <p id="quizNumber7">7</p>
+                    <p id="quizNumber8">8</p>
+                    <p id="quizNumber9">9</p>
+                    <p id="quizNumber10">10</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="../index.html">Ana Sayfaya dönmek için tıklayınız.</a>
+            <a href="../components/fenUnit1.html">Fen Bilimleri dersine geçmek için tıklayınız.</a>
         </div>
     </div>
     <script src="./mathSorular.js"></script>
+    <script src="../index.js"></script>
 </body>
 
 </html>
