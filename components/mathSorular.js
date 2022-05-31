@@ -1,22 +1,44 @@
-const sure = document.getElementById('sure')
+//Puanlama ve sayaç kısmı
 
-let saniye = 0,
-    dakika = 0,
-    saat = 0;
+let point = 0;
+let arr = ["otuzikibin", "456905", "onbinleronlarbasamagı", "ellidörtbinbeşyüzkırksekiz", "20000", "24 578", "3300", "121", "300", "40"];
+let pointArr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
-function bak() {
-    if (saniye < 59) saniye = saniye + 1;
-    else {
-        saniye = 0;
-        if (dakika < 59) dakika = dakika + 1;
-        else {
-            dakika = 0;
-            saat = saat + 1;
+function control(qn, ans) {
+    let par_id = document.getElementById("quizNumber" + qn);
+    if (arr[qn - 1] == ans) {
+        par_id.style.backgroundColor = "#80ed99";
+        if (pointArr[qn - 1] == 0) {
+            point += 10;
         }
+        pointArr[qn - 1] = 1;
+    } else {
+        par_id.style.backgroundColor = "#e63946ff";
+        if (pointArr[qn - 1] == 1) {
+            point -= 10;
+        }
+        pointArr[qn - 1] = 0;
     }
-    $("#sure").html(saat + " : " + dakika + " : " + saniye);
+    document.getElementById("point").innerHTML = "Puan: " + point;
 }
-$(document).ready(function() {
-    $("#sure").html("0 : 0 : 0");
-    setInterval(bak, 1000);
-});
+
+let time_id = document.getElementById("time");
+let seconds = 300;
+t_int = setInterval(timer, 1000);
+
+function timer() {
+    if (seconds <= 0) {
+        time_id.innerHTML = "Süre: --:--";
+    } else {
+        let m = Math.floor(seconds / 60);
+        let s = seconds % 60;
+        if (m < 10) {
+            m = "0" + m;
+        }
+        if (s < 10) {
+            s = "0" + s;
+        }
+        time_id.innerHTML = m + ":" + s;
+        seconds--;
+    }
+}
