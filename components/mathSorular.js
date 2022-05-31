@@ -1,7 +1,7 @@
 //Puanlama ve sayaç kısmı
 
 let point = 0;
-let arr = ["otuzikibin", "456905", "onbinleronlarbasamagı", "ellidörtbinbeşyüzkırksekiz", "20000", "24 578", "3300", "121", "300", "40"];
+let arr = ["otuzikibinbes", "456905", "onbinleronlarbasamagı", "ellidörtbinbeşyüzkırksekiz", "20000", "24 578", "3300", "121", "300", "40"];
 let pointArr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 function control(qn, ans) {
