@@ -309,7 +309,7 @@ body {
 }
 
 .img img {
-    height: 317px;
+    height: 400px;
     z-index: 99;
 }
 
@@ -319,8 +319,8 @@ body {
     transition: transform 1s 50ms ease-in-out;
 } */
 
-.contentText {
-    margin-top: 1.5rem;
+.contentText1 {
+    margin-top: 4.6rem;
 }
 
 .contentParagraph {
@@ -373,7 +373,6 @@ body {
 #scienceSelect {
     height: 100%;
     width: 80%;
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -381,12 +380,12 @@ body {
 }
 
 .scienceContext {
-    height: 75vh;
+    height: 80vh;
     width: 100%;
 }
 
 .image {
-    height: 50%;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -400,16 +399,11 @@ body {
     border-radius: 30px;
 }
 
-.image img:hover {
-    transform: scaleY(1.1);
-    transition: all 0.4s ease-in-out;
-}
-
 
 /*Footer*/
 
 .footer {
-    height: 25vh;
+    height: 20vh;
     width: 100%;
     background-image: linear-gradient(to bottom, #f1faeeff, #a8dadcff);
     display: flex;
